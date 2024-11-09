@@ -3175,8 +3175,8 @@ footer .footer-disc a {
 /* Media Query for Tablets (Min-width: 768px) */
 @media (min-width:576px) and (max-width: 768px) {
     .my-button {
-        height: 10vw;
-        width: 10vw;
+        height: 12vw;
+        width: 12vw;
     }
 
     .my-button i {
