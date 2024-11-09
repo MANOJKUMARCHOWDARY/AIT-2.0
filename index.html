@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
+    <link rel="stylesheet" href="./assests/css/homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- Swiper CSS -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white main-nav d-flex text-dark sticky-top top-3" id="navbar-dsk">
+
+        <a class="navbar-brand ms-4 pt-0 me-0"  href="#">
+            <img src="./assests/images/logo-ait-white.png" alt="AchieversIT Software Training Institute in Bangalore"
+                class="w-100 ait-logo h-50 ">
+        </a>
+
+
+
+
+        <button class="navbar-toggler" type="button" id="menuToggle" data-bs-toggle="collapse"
+            data-bs-target="#navbar-responsive" aria-controls="navbar-responsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse mt-0 w-100 ms-0" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mt-2 mt-lg-0 w-100 border-x-none d-flex justify-content-evenly mx-2">
+                <li class="nav-item dropdown flex-1 nav-item1" id="navbarDropdownMenuLink">
+                    <a class="nav-link nav-link-btn text-white dropdown-toggle border h-11 rounded-8 bg-danger" href="#"
+                        role="button" aria-expanded="false">
+                        All Courses <i class="fa-solid fa-chevron-down" id="arrowIcon"></i>
+                    </a>
+                </li>
+
+                <form class="d-flex text-captionNormal search-text" role="search" style="width: 35%;">
+                    <div class="input-group h-11 rounded-8 text-captionNormal search-wrapper">
+                        <input class="form-control text-captionNormal search-input -tracking-0\.14 " type="search"
+                            placeholder="Explore Courses " aria-label="Search">
+
+                        <span
+                            class="input-group-text top-50 bg-danger w-8 h-8 rounded-8 cursor-pointer search-icon pointer-events-none right-auto p-spacing6">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                </form>
+                <div id="dropdown-container">
+                    <div class="overlay-container position-fixed" id="overlayContainer">
+                        <div class="container bg-white fixed left-0 w-100  rounded" style="height: 83vh;">
+                            <div class=" container-fluid">
+                                <div class="d-flex flex-row width-fit">
+                                    <div class="mega-menu-category pt-2">
+                                        <h1 class="menu-heading text-captionNormal pt-3 pb-2 ms-5"
+                                            style="font-weight: 600;">CATEGORIES</h1>
+                                        <ul class="category-list  ">
+                                            <li class="menu-list cursor-pointer active " tabindex="0"
+                                                data-category="Generative AI"><a title="Generative AI">Generative
+                                                    AI</a><i <i class="fa-solid fa-chevron-right"></i>
+                                            </li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="AI &amp; Machine Learning"><a
+                                                    title="AI &amp; Machine Learning">AI
+                                                    &amp; Machine
+                                                    Learning</a><i <i class="fa-solid fa-chevron-right"></i>
+                                            </li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Data Science &amp; Business Analytics"><a
+                                                    title="Data Science &amp; Business Analytics">Data
+                                                    Science &amp; Business Analytics</a> <i
+                                                    class="fa-solid fa-chevron-right"></i></li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Project Management"><a title="Project Management">Project
+                                                    Management</a>
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Cyber Security"><a title="Cyber Security">Cyber
+                                                    Security</a> <i class="fa-solid fa-chevron-right"></i></li>
+                                            <!-- <li class="menu-list cursor-pointer " tabindex="0"><a
+                                                    title="Agile and Scrum">Agile and
+                                                    Scrum</a> <i class="fa-solid fa-chevron-right"></i></li> -->
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Cloud Computing &amp; DevOps"><a
+                                                    title="Cloud Computing &amp; DevOps">Cloud
+                                                    Computing &amp; DevOps</a> <i class="fa-solid fa-chevron-right"></i>
+                                            </li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Business and Leadership"><a
+                                                    title="Business and Leadership">Business and
+                                                    Leadership</a> <i class="fa-solid fa-chevron-right"></i></li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Software Development"><a
+                                                    title="Software Development">Software
+                                                    Development</a> <i class="fa-solid fa-chevron-right"></i></li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Product and Design"><a title="Product and Design">Product
+                                                    and Design</a>
+                                            </li>
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="IT Service and Architecture"><a
+                                                    title="IT Service and Architecture">IT Service and
+                                                    Architecture</a> <i class="fa-solid fa-chevron-right"></i></li>
+                                            <!-- <li class="menu-list cursor-pointer " tabindex="0"><a
+                                                    title="Quality Management">Quality
+                                                    Management</a> <i class="fa-solid fa-chevron-right"></i>
+                                            </li> -->
+                                            <li class="menu-list cursor-pointer " tabindex="0"
+                                                data-category="Digital Marketing"><a title="Digital Marketing">Digital
+                                                    Marketing</a> <i class="fa-solid fa-chevron-right"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="container d-flex flex-column  mt-3 gap-0 pt-0 max-h-484px overflow-y-auto  max-w-fit w-100 ms-3"
+                                        style="overflow-x: hidden;">
+                                        <div class="container pe-0" id="course-container">
+
+
+                                            <div class="new-mega-menu-program " id="courseContainer"
+                                                style="z-index: 99999; position: relative;">
+                                                <div class="new-menu-list w-100">
+                                                    <div class="new-megamenu-heading pt-2">
+                                                        <h3>Career Aligned Learning Paths</h3>
+                                                        <p>Master essential skills for your dream career</p>
+                                                    </div>
+                                                    <div class="row overflow-y-auto mx-2" id="courseList">
+                                                        <!-- Bootstrap row for grid layout -->
+                                                        <!-- Course cards will be dynamically generated here -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="mega-menu-quick-links">
+                                        <p class="mega-menu-free-course-heading">Looking for Free Courses?</p>
+                                        <p>Get access to in-demand skill courses for free!</p>
+                                        <div class="mega-menu-free-course-wrap pt-0">
+                                            <a href="/">
+                                                <img src="./assests/images/navbar-2.jpg"
+                                                    class="img-fluid w-100 bg-white rounded-8"
+                                                    style="width: 100px;height: 300px;">
+
+                                                <button type="button"
+                                                    class="shimmer-button btn text-white bg-danger px-3 px-2 mt-1 text-uppercase letter-space"
+                                                    id="explore-btn">
+                                                    Get Free Insights
+                                                    <i></i>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- ---- -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <li class="nav-item flex-1">
+                    <a class="nav-link text-dark" href="">Corporate
+                        Trianing</a>
+                </li>
+                <li class="nav-item flex-1">
+                    <a class="nav-link text-dark" href="">Hire From Us</a>
+                </li>
+                <li class="nav-item dropdown flex-1">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" id="existingStudents"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Existing Students
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="existingStudents"
+                        style="z-index: 9999; min-width: 18rem;">
+                        <li>
+                            <a class="nav-link text-dark text-black p-0" href="https://lms.achieversit.com/"
+                                target="_blank">LMS
+                                Portal</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown flex-1">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" id="more" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">More</a>
+                    <ul class="dropdown-menu" aria-labelledby="more" style="z-index: 9999;">
+                        <li>
+                            <a class="nav-link text-dark text-black p-0" href="https://lms.achieversit.com/"
+                                target="_blank">Blogs</a>
+                            <a class="nav-link text-dark text-black p-0" href="https://lms.achieversit.com/"
+                                target="_blank">E-Learning
+                            </a>
+                            <a class="nav-link text-dark text-black p-0" href="https://lms.achieversit.com/"
+                                target="_blank">Careers
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item flex-1">
+                    <button class="rounded-8 text-white mt-1 py-1 px-2 bg-danger" style="font-size: 15px;"><span><i class="fa-solid fa-right-to-bracket pe-2"></i></span>Signin</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ----------------------------mobile navbar starts here ------------------------------------------------------------ -->
+
+
+
+    <div class='fixed w-screen inset-0 bg-mono-black 
+    opacity-100 bg-opacity-80
+    translate-x-0
+    transform transition ease-in-out duration-500 z-[999]' id="navbar-responsive">
+
+        <div class="max-width-300 h-100" id="mob_navbar">
+            <div class="d-flex flex-column h-100">
+                <div class="d-flex align-items-center h-16 rounded-tr-20 w-100 p-3 gap-3 shadow-neutralShadow bg-white">
+                    <div class="d-flex flex-grow-1">
+                        <div class="w-27 h-2 position-relative">
+                            <a href="/"><img alt="kh logo" src="./assests/images/logo-ait-white.png"
+                                    class="img-fluid w-100 h-100 position-absolute"></a>
+                        </div>
+                    </div>
+                    <div class="h-8 w-8 cursor-pointer d-flex justify-content-center align-items-center bg-neutral-100 rounded-112"
+                        id="closeMenu">
+                        <i class="fa-solid fa-xmark text-xl leading-5 text-neutral-600"></i>
+                    </div>
+                </div>
+
+                <div class="px-spacing20 overflow-auto flex-grow-1 bg-subdued  mcard" id="mob-scrn-1">
+
+                    <div class="block w-full position-relative flex-grow-1 bg-subdued" id="allCourses">
+                        <div class="transition-all duration-500">
+                            <div class="d-flex cursor-pointer align-items-center justify-content-between px-0 py-2">
+                                <div class="d-flex text-sm fw-semibold align-items-center py-0 my-0 ">
+                                    <div class="mr-1 ">
+                                        <i class="text-xl leading-5 text-primary-main icon-building-01"></i>
+                                    </div>
+                                    <h3 class="text-neutral-800 fw-seminbold text-sm active">All Courses</h3>
+                                </div>
+                                <div class="w-5 h-5 ml-spacing8 d-flex align-items-center transition-all duration-300">
+                                    <i
+                                        class="fa-solid fa-chevron-right d-block top-0 position-relative  text-xl leading-5 text-neutral-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-bottom border-neutral-200"></div>
+                    <div class="block w-full position-relative flex-grow-1 bg-subdued">
+                        <div class="transition-all duration-500">
+                            <div class="d-flex cursor-pointer align-items-center justify-content-between px-0 py-2">
+                                <div class="d-flex text-sm fw-semibold align-items-center py-0 my-0">
+                                    <div class="mr-1"><i
+                                            class="text-xl leading-5 text-primary-main icon-building-01"></i></div>
+                                    <h3 class="text-neutral-800 fw-seminbold text-sm ">Resources</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block w-full position-relative flex-grow-1 bg-subdued">
+                        <div class="transition-all duration-500">
+                            <div class="d-flex cursor-pointer align-items-center justify-content-between px-0 py-2">
+                                <div class="d-flex text-sm fw-semibold align-items-center py-0 my-0">
+                                    <div class="mr-1"><i
+                                            class="text-xl leading-5 text-primary-main icon-building-01"></i></div>
+                                    <h3 class="text-neutral-800 fw-seminbold text-sm ">Hire From Us</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block w-full position-relative flex-grow-1 bg-subdued">
+                        <div class="transition-all duration-500">
+                            <div class="d-flex cursor-pointer align-items-center justify-content-between px-0 py-2">
+                                <div class="d-flex text-sm fw-semibold align-items-center py-0 my-0">
+                                    <div class="mr-1"><i
+                                            class="text-xl leading-5 text-primary-main icon-building-01"></i></div>
+                                    <h3 class="text-neutral-800 fw-seminbold text-sm ">Corporate Trianing</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block w-full position-relative flex-grow-1 bg-subdued">
+                        <div class="transition-all duration-500">
+                            <div class="d-flex cursor-pointer align-items-center justify-content-between px-0 py-2">
+                                <div class="d-flex text-sm fw-semibold align-items-center py-0 my-0">
+                                    <div class="mr-1"><i
+                                            class="text-xl leading-5 text-primary-main icon-building-01"></i></div>
+                                    <h3 class="text-neutral-800 fw-seminbold text-sm ">Blogs</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <div class="overflow-auto flex-grow-1 bg-subdued d-none shadow-neutralShadow" id="all_courses">
+                    <div class="d-flex align-items-center py-2 cursor-pointer border bg-white w-100 px-2 position-fixed max-width-300  "
+                        id="course-label" style="border-top: 0 !important;z-index: 9999;">
+                        <i class="fa-solid fa-chevron-left d-block top-0 position-relative  text-xl leading-5 text-neutral-500 mr-2"
+                            id="backButton"></i>
+                        <h2 class="text-sm fw-semibold text-md ms-5 ps-3" id="course-title">All Courses</h2>
+                    </div>
+                    <div id="dynamic-sections" class="px-spacing20 pt-50"></div>
+
+                </div>
+                <div class="container position-fixed bottom-5 overflow-y-auto cards-scrollbar mnavbar h-100 ps-3 pt-2 d-none bg-white "
+                    id="mob_courses_container">
+
+
+
+                    <div class="d-flex align-items-center py-2 cursor-pointer border bg-white w-100 px-0 ms-0 position-fixed"
+                        id="categoryLabel" style="border-top: 0 !important;border-left: 0 !important;z-index: 9999;">
+                        <i class="fa-solid fa-chevron-left d-block top-0 position-relative  text-xl leading-5 text-neutral-500 mr-2"
+                            id="course_back"></i>
+                        <span id="dynamicCategory" class="text-sm fw-semibold text-md ms-5 ps-3"></span>
+                    </div>
+
+
+
+                    <div class="new-mega-menu-program position-relative " id="courseContainer" style="top: 35px;">
+                        <!-- <div id="categoryLabel" class="d-flex align-items-center mb-3 position-fixed bg-white shadow-neutralShadow">
+                             Chevron icon -->
+                        <!-- <span class="material-icons me-2"><i
+                                class="fa-solid fa-chevron-left d-block top-0 position-relative  text-xl leading-5 text-neutral-500 mr-2"></i></span>
+                            <span id="dynamicCategory" class="text-sm ms-5 fw-semibold"></span>
+                        </div> -->
+                        <div class="menu-heading text-danger pt-3">
+                            <h3 class="text-sm ">Career Aligned Learning Paths</h3>
+                            <p class="text-sm">Master essential skills for your dream career</p>
+                        </div>
+                        <div class="row" id="mobcourseList">
+                            <!-- Dynamic course content goes here -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="w-100 d-flex container">
+                    <div class="container bg-white">
+                        <div
+                            class="d-flex  align-items-center bg-mono-whiteSubdued px-spacing20 py-2 justify-content-between text-sm">
+                            <i class="icon-help-octagon text-xl leading-5 text-neutral-600"></i>
+                            <div class="d-flex flex-column flex-grow-1">
+                                <div class="fw-semibold text-sm leading-4.5 text-neutral-800">Didn’t find
+                                    what
+                                    you need?</div>
+                                <div class="fw-regular text-sm leading-4.5 text-neutral-600">We’ll help you
+                                    find
+                                    it</div>
+                            </div>
+                            <!-- <div class="d-flex justify-content-center align-items-center">
+                                <div
+                                    class="h-8 min-w-24 border border-neutral-700 rounded d-flex align-items-center justify-content-center px-spacing12">
+                                    <a href="tel:undefined" rel="nofollow" class="d-flex gap-spacing8 items-center"><i
+                                            class="fa-solid fa-phone text-base leading-4 text-dark"></i>
+                                        <p class="text-sm fw-semibold whitespace-nowrap text-dark">Call Us</p>
+                                    </a>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="px-spacing20 w-100 py-spacing16">
+                            <a href="#" class="bg-danger">
+                                <button
+                                    class="text-shinywhite text-uppercase text-white fw-bold text-sm h-11 w-100 align-items-center text-center border-none border-0 rounded px-spacing16 d-flex justify-content-center"
+                                    style="background-color: darkred !important;">Sign
+                                    In
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <a href="./banner.html"></a> -->
+    <!------------------------------------End of navbar----------------------------  -->
+
+    <div class=" conatiner pt-3 bg-overlay banner-container">
+        <div class="row mx-0">
+            <div class="col-lg-5  mt-lg-5 pt-sm-0 mt-sm-0 pt-md-2 mt-md-2 banner-text ps-md-5">
+                <h1 class=" w-100 text-41 ms-2 text-shinywhite">
+                    Empower Your <br>Future with<br>
+                    <span class="lz-animation text-41">Assured Outcomes</span>
+                </h1>
+                <p class="text-shinywhite text-24 w-100 d-flex ms-2 text-nowrap">
+                    India’s leading career institute offering result-oriented learning.<br>
+                    Enter the tech industry industry-ready.
+                </p>
+
+                <button type="button"
+                    class="shimmer-button btn text-white bg-danger h-40 mt-2 text-uppercase letter-space"
+                    id="explore-btn">
+                    EXPLORE COURSES
+                    <i></i>
+                </button>
+
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <div class="position-relative">
+                    <div class="container img-container">
+                        <div class="path">
+                            <div class="position-relative w-100 right-0 path-cont" style="z-index: 2;">
+                                <div class="text-card ps-0 text-center px-2 d-flex align-items-center h-100">
+                                    <p id="role1" class="text-dark">Delivery Partner</p>
+                                    <img src="https://www.masaischool.com/images/revamp/Arrow.svg" class="w-50" alt="">
+                                    <p id="role2" class="text-dark">Software Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="text-card">
+                                <p id="profile-quote"><i class="fa-solid fa-quote-left fs-3"
+                                        style="color: var(--bg-orangered);"></i>As a college dropout, I rewrote my
+                                    future with AchieversIT's help, becoming a skilled developer..<i
+                                        class="fa-solid fa-quote-right fs-3" style="color: var(--bg-orangered);"></i>
+                                </p>
+                                <h2 id="profile-name">Aparna Singh</h2>
+                            </div>
+
+                        </div>
+                        <div class="rounded-circle pt-0 px-0 pb-0 lg-w-100 " style="z-index: 1;">
+                            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshit_Tripathi_4defe7c5e9.png"
+                                alt="Aparna Singh" class="bn-img" id="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------Build Trust  ref-------------------------- -->
+    <div class="container-fluid pt-5 hiden pb-0" id="stats-section">
+        <div class="position-absolute top-2 left-0 opacity-ntrl  text-ntrlclr">
+            <!-- <svg viewBox="0 0 142 116" width="142" height="116" class="svg-img">
+                <g clip-path="url(#clip0_413_10833)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M141.377 18.1171C120.202 28.1823 109.615 40.0086 109.615 53.5965C118.64 54.603 126.103 58.1677 132.005 64.2907C137.906 70.4136 140.857 77.501 140.857 85.5531C140.857 94.1085 137.993 101.322 132.265 107.193C126.537 113.064 119.334 116 110.656 116C100.936 116 92.5185 112.184 85.4023 104.551C78.286 96.9183 74.728 87.6501 74.728 76.7462C74.728 44.0345 93.6465 18.4527 131.484 0L141.377 18.1171ZM66.6493 18.1171C45.3006 28.1823 34.6264 40.0086 34.6264 53.5965C43.8254 54.603 51.3755 58.1677 57.2767 64.2907C63.178 70.4136 66.1286 77.501 66.1286 85.5531C66.1286 94.1085 63.2214 101.322 57.4069 107.193C51.5924 113.064 44.3461 116 35.6678 116C25.948 116 17.5736 112.184 10.5441 104.551C3.51467 96.9183 0 87.6501 0 76.7462C0 44.0345 18.8317 18.4527 56.4957 0L66.6493 18.1171Z"
+                        fill="orangered"></path>
+                </g>
+                <defs>
+                    <clipPath id="clip0_413_10833">
+                        <rect width="142" height="116" fill="var(--bg-orangered)"></rect>
+                    </clipPath>
+                </defs>
+            </svg> -->
+        </div>
+        <h3 class="text-center text-41 text-danger linear-wipe m-3 mb-4 ">Achieve success with industry-driven
+            learning
+        </h3>
+
+        <div class="row justify-content-center align-items-start pt-3 pb-5 cursor-pointer mx-5" style=" --bs-gutter-x:0rem; gap: 60px !important;">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-2 stat-card text-center d-flex justify-content-evenly align-items-center position-relative">
+                <i class="fa-solid fa-coins fs-11 icon-outside bx-shadow"></i>
+                <div class="card-cont d-flex flex-column gap-2">
+                    <p class="stat-value m-0" id="salary-hike" data-target="71.6">0</p>
+                    <p class="stat-label m-0">Avg. Salary Hike</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-2 stat-card text-center d-flex justify-content-evenly align-items-center position-relative">
+                <i class="fa-solid fa-people-group fs-11 icon-outside bx-shadow"></i>
+                <div class="card-cont d-flex flex-column gap-2">
+                    <p class="stat-value m-0" id="careers-transformed" data-target="5000">0</p>
+                    <p class="stat-label text-wrap m-0">Careers Transformed</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-2 stat-card text-center d-flex justify-content-evenly align-items-center position-relative">
+                <i class="fa-solid fa-users fs-11 icon-outside bx-shadow"></i>
+                <div class="card-cont d-flex flex-column gap-2">
+                    <p class="stat-value m-0" id="industry-partners" data-target="400">0</p>
+                    <p class="stat-label m-0">Industry Partners</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------------------------choose programs section -------------------------------------------------- -->
+    <div class="grid" id="prog-offer">
+        <h3 class="text-center text-41 text-danger linear-wipe pt-3 pb-5">Choose the best courses we offer
+        </h3>
+        <ul id="hexGrid">
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image:url(./assests/images/aiimage.jpg);'></div>
+                        <h1 id="demo1">AI and Machine Learning</h1>
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image: url(./assests/images/datascience.jpg);'></div>
+                        <h1 id="demo1">Data Science & Analytics</h1>
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image: url(./assests/images/management.jpg);'></div>
+                        <h1 id="demo1">Management</h1>
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style="background-image: url(./assests/images/design.jpg)"></div>
+                        <!-- <h1 id="demo1">Design</h1> -->
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image: url(./assests/images/digitalmearketing.jpg);'></div>
+                        <!-- <h1 id="demo1">Digital Marketing</h1> -->
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image: url(./assests/images/cloud.jpg);'></div>
+                        <h1 id="demo1">CLoud Computing</h1>
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image: url(./assests/images/softwaredevelopment.jpg);'></div>
+                        <h1 id="demo1">Software Development</h1>
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image: url(./assests/images/microsoft.jpg);'></div>
+                        <h1 id="demo1">Microsoft Programs</h1>
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+
+
+            <!-- <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' style='background-image:url(https://images.unsplash.com/photo-1417436026361-a033044d901f?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;w=1080&amp;fit=max&amp;s=faa4e192f33e0d6b7ce0e54f15140e42);'></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li> -->
+            <!-- <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' style='background-image: url(https://images.unsplash.com/photo-1425668273332-3a46ab26b161?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;w=1080&amp;fit=max&amp;s=d453ab3dec298c43415526458b360fa6);'></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li> -->
+            <!-- <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+                <div class='img' style='background-image: url(https://images.unsplash.com/44/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;w=1080&amp;fit=max&amp;s=49dab7a5e4b2e28b5707bc2db974c94b);'></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li> -->
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="#">
+                        <div class='img' style='background-image: url(./assests/images/service.jpg);'></div>
+                        <h1 id="demo1">IT Service and Architechture</h1>
+                        <!-- <p id="demo2">Some sample text about the article this hexagon leads to</p> -->
+                    </a>
+                </div>
+            </li>
+            <li class="hex pb-0 mb-0" style=".hex::after{padding-bottom: 0px;} ;width: 15%;">
+                <!-- <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' style='background-image: url(https://images.unsplash.com/photo-1417026846249-f31f7e43fc35?crop=entropy&amp;fit=crop&amp;fm=jpg&amp;h=1375&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=80&amp;w=1725);'></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div> -->
+            </li>
+        </ul>
+        <button type="button "
+            class="shimmer-button btn text-white bg-danger p-3 mt-2 text-uppercase letter-space position-relative left-50"
+            id="explore-progbtn">
+            EXPLORE Programs
+            <i></i>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- ---------------------------------------------Program cards-------------------------------- -->
+    <section class="section programs-section filter-program-section gl-grid js-program-section  our-courses-sec"
+        id="our-courses">
+
+        <div class="explore-program--scroll" id="explore-program"></div>
+        <div class="section-body js-program-wrapper">
+            <div class="programs-block js-program-block init-click" id="courses-list-accordion">
+                <div class="program-list-wrapper bg-transparent">
+                    <div class="section-head">
+                        <div class="program-section-head-wrapper">
+                            <p class="section-overline">Find your ideal </p>
+                            <h2 class="section-title mb-16">Programs from world’s best universities</h2>
+                        </div>
+                    </div>
+                    <div class="program-data-wrapper js-program-list-wrapper active-list">
+                        <div class="js-recommended-cards recommended js-tab-pane tab-pane active " id="recommeded">
+                        </div>
+
+                        <div class="js-tab-pane tab-pane active bg-transparent id="domain">
+                            <p class="program-cat-title">Browse by Domains</p>
+                            <ul class="programs-list bg-transparent ">
+                                <li class="program-list__item popular-open__item">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head js-popular-item track-click-mp active"
+                                            data-rel="popular" data-event-type="Domains Cards" data-title="Popular"
+                                            data-tab="init">
+                                            <div class="lazy program-acc__logo js-popularicon gl-lazy-loaded fadeIn"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/popular-new.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/popular-new.svg&quot;);">
+                                            </div>
+                                            <p class="program__title m-0">Popular Courses</p>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="artificial-intelligence" data-event-type="Domains Cards"
+                                            data-title="AI &amp; Machine Learning" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/artificial-intelligence.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/artificial-intelligence.svg&quot;);">
+                                            </div>
+                                            <a href="/artificial-intelligence/courses" class="program__title">AI
+                                                &amp;
+                                                Machine Learning</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="data-science" data-event-type="Domains Cards"
+                                            data-title="Data Science &amp; Business Analytics " data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/data-science.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/data-science.svg&quot;);">
+                                            </div>
+                                            <a href="/data-science/courses" class="program__title">Data Science
+                                                &amp;
+                                                Business Analytics </a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <!-- <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="study-abroad" data-event-type="Domains Cards"
+                                            data-title="Study Abroad" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/study-abroad.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/study-abroad.svg&quot;);">
+
+                                            </div>
+                                            <a href="/study-abroad/courses" class="program__title">Study Abroad</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li> -->
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="management" data-event-type="Domains Cards"
+                                            data-title="Management" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/management.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/management.svg&quot;);">
+                                            </div>
+                                            <a href="/management/courses" class="program__title">Management</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="microsoft_programs" data-event-type="Domains Cards"
+                                            data-title="Microsoft Programs" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/microsoft-programs.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/microsoft-programs.svg&quot;);">
+                                            </div>
+
+                                            <p class="program__title m-0">Microsoft Programs</p>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="cloud_computing" data-event-type="Domains Cards"
+                                            data-title="Cloud Computing" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/cloud-computing.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/cloud-computing.svg&quot;);">
+                                            </div>
+                                            <a href="/cloud-computing/courses" class="program__title">Cloud
+                                                Computing</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <!-- <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="cyber-security" data-event-type="Domains Cards"
+                                            data-title="Cyber Security" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/cyber-security.svg">
+                                            </div>
+                                            <a href="/cyber-security/courses" class="program__title">Cyber Security</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li> -->
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="software_development" data-event-type="Domains Cards"
+                                            data-title="Software Development" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/software-engineering.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/software-engineering.svg&quot;);">
+                                            </div>
+                                            <a href="/software-engineering/courses" class="program__title">Software
+                                                Development</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="digital_marketing" data-event-type="Domains Cards"
+                                            data-title="Digital Marketing" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/digital-marketing.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/digital-marketing.svg&quot;);">
+                                            </div>
+                                            <a href="/digital-marketing/courses" class="program__title">Digital
+                                                Marketing</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="design" data-event-type="Domains Cards" data-title="Design"
+                                            data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/design.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/design.svg&quot;);">
+                                            </div>
+                                            <a href="/design/courses" class="program__title">Design</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                            <div class="program-list__show-more js-program-show-more track-click-mp"
+                                data-event-type="Show More" data-title="Course Layout">Show more</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-cards-wrapper js-program-card ms-0">
+
+                    <div class="program-card-block active" id="popular">
+                        <p class="popular-list__title new-list__item-desk pp-list">
+                            <span class="popular-list__title-text" id="course-title">
+                                <!-- Dynamic title will be inserted here -->
+                            </span>
+                        </p>
+                        <ul class="free-flow-list" id="course-list">
+                            <!-- Dynamic content will be inserted here -->
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <button type="button "
+                class="d-flex shimmer-button btn text-white bg-danger p-3  mt-3 text-uppercase letter-space position-relative m-auto" 
+                id="explore-morebtn">
+                EXPLORE MORE COURSES
+                <i></i>
+            </button>
+        </div>
+
+
+    </section>
+
+
+
+
+    <section class="section programs-section filter-program-section gl-grid js-program-section pt-5 mob-courses-sect"
+        id="our-courses">
+
+        <div class="explore-program--scroll" id="explore-program"></div>
+        <div class="section-body js-program-wrapper">
+            <div class="programs-block js-program-block init-click" id="courses-list-accordion">
+                <div class="program-list-wrapper">
+                    <div class="section-head">
+                        <div class="program-section-head-wrapper">
+                            <p class="section-overline">Find your ideal </p>
+                            <h2 class="section-title mb-16">Programs from world’s best universities</h2>
+                        </div>
+                    </div>
+                    <div class="program-data-wrapper js-program-list-wrapper active-list">
+                        <div class="js-recommended-cards recommended js-tab-pane tab-pane active" id="recommeded">
+                        </div>
+
+                        <div class="js-tab-pane tab-pane active" id="domain">
+                            <p class="program-cat-title">Browse by Domains</p>
+                            <ul class="programs-list">
+                                <li class="program-list__item popular-open__item">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head js-popular-item track-click-mp active"
+                                            data-rel="popular" data-event-type="Domains Cards" data-title="Popular"
+                                            data-tab="init" aria-expanded="true">
+                                            <div class="lazy program-acc__logo js-popularicon gl-lazy-loaded fadeIn"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/popular-new.svg"
+                                                data-loaded="true"
+                                                style="background-image: url('https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/popular-new.svg');">
+                                            </div>
+                                            <p class="program__title m-0">Popular Courses</p>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+                                        <div class="program-card-block active" id="popular">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text" id="course-title-popular">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list">
+                                                <div class="swiper-container row">
+                                                    <div class="swiper-wrapper" id="course-list-popular">
+
+                                                        <!-- Cards will be dynamically inserted here -->
+                                                    </div>
+                                                    <!-- Swiper navigation buttons -->
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <!-- Swiper pagination -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="artificial-intelligence" data-event-type="Domains Cards"
+                                            data-title="AI &amp; Machine Learning" data-tab="init"
+                                            aria-expanded="false">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/artificial-intelligence.svg"
+                                                data-loaded="true"
+                                                style="background-image: url('https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/artificial-intelligence.svg');">
+                                            </div>
+                                            <a href="/artificial-intelligence/courses" class="program__title">AI &amp;
+                                                Machine Learning</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+                                        <div class="program-card-block" id="artificial-intelligence">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text" id="course-title-ai_ml">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper" id="course-list-aiml">
+                                                        <!-- Cards will be dynamically inserted here -->
+                                                    </div>
+                                                    <!-- Swiper navigation buttons -->
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <!-- Swiper pagination -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="data-science" data-event-type="Domains Cards"
+                                            data-title="Data Science &amp; Business Analytics " data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/data-science.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/data-science.svg&quot;);">
+                                            </div>
+                                            <a href="/data-science/courses" class="program__title">Data Science
+                                                &amp;
+                                                Business Analytics </a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+
+                                        <div class="program-card-block" id="data-science">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text" id="course-title-datascience">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper" id="course-list-datascience">
+                                                        <!-- Cards will be dynamically inserted here -->
+                                                    </div>
+                                                    <!-- Swiper navigation buttons -->
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <!-- Swiper pagination -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <!-- <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="study-abroad" data-event-type="Domains Cards"
+                                            data-title="Study Abroad" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/study-abroad.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/study-abroad.svg&quot;);">
+
+                                            </div>
+                                            <a href="/study-abroad/courses" class="program__title">Study Abroad</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li> -->
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="management" data-event-type="Domains Cards"
+                                            data-title="Management" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/management.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/management.svg&quot;);">
+                                            </div>
+                                            <a href="/management/courses" class="program__title">Management</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+
+                                        <div class="program-card-block" id="management">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text" id="course-title-management">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list" id="course-list-management">
+                                                <!-- Dynamic content will be inserted here -->
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="microsoft-programs" data-event-type="Domains Cards"
+                                            data-title="Microsoft Programs" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/microsoft-programs.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/microsoft-programs.svg&quot;);">
+                                            </div>
+
+                                            <p class="program__title p-0">Microsoft Programs</p>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+
+                                        <div class="program-card-block" id="microsoft-programs">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text"
+                                                    id="course-title-microsoft-programs">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list" id="course-list-microsoft-programs">
+                                                <!-- Dynamic content will be inserted here -->
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="cloud-computing" data-event-type="Domains Cards"
+                                            data-title="Cloud Computing" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/cloud-computing.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/cloud-computing.svg&quot;);">
+                                            </div>
+                                            <a href="/cloud-computing/courses" class="program__title">Cloud
+                                                Computing</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+
+                                        <div class="program-card-block" id="cloud-computing">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text"
+                                                    id="course-title-cloud-computing">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper" id="course-list-cloud-computing">
+                                                        <!-- Cards will be dynamically inserted here -->
+                                                    </div>
+                                                    <!-- Swiper navigation buttons -->
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <!-- Swiper pagination -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <!-- <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="cyber-security" data-event-type="Domains Cards"
+                                            data-title="Cyber Security" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/cyber-security.svg">
+                                            </div>
+                                            <a href="/cyber-security/courses" class="program__title">Cyber Security</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                </li> -->
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="software-development" data-event-type="Domains Cards"
+                                            data-title="Software Development" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/software-engineering.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/software-engineering.svg&quot;);">
+                                            </div>
+                                            <a href="/software-engineering/courses" class="program__title">Software
+                                                Development</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+
+                                        <div class="program-card-block" id="software-development">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text"
+                                                    id="course-title-software-development">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper" id="course-list-software-development">
+                                                        <!-- Cards will be dynamically inserted here -->
+                                                    </div>
+                                                    <!-- Swiper navigation buttons -->
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <!-- Swiper pagination -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="digital-marketing" data-event-type="Domains Cards"
+                                            data-title="Digital Marketing" data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/digital-marketing.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/digital-marketing.svg&quot;);">
+                                            </div>
+                                            <a href="/digital-marketing/courses" class="program__title">Digital
+                                                Marketing</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+
+                                        <div class="program-card-block" id="digital-marketing">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text"
+                                                    id="course-title-digital-marketing">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper" id="course-list-digitalmarketing">
+                                                        <!-- Cards will be dynamically inserted here -->
+                                                    </div>
+                                                    <!-- Swiper navigation buttons -->
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <!-- Swiper pagination -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="program-list__item program-item__domain" data-cat="Domains">
+                                    <div class="program-acc-item">
+                                        <div class="acc-title program-acc-head js-program-head track-click-mp"
+                                            data-rel="design" data-event-type="Domains Cards" data-title="Design"
+                                            data-tab="init">
+                                            <div class="lazy program-acc__logo"
+                                                data-background-image="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/design.svg"
+                                                data-loaded="true"
+                                                style="background-image: url(&quot;https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/icons/design.svg&quot;);">
+                                            </div>
+                                            <a href="/design/courses" class="program__title">Design</a>
+                                            <span class="program-acc__arrow"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="program-cards-wrapper js-program-card ms-3">
+
+                                        <div class="program-card-block" id="design">
+                                            <p class="popular-list__title new-list__item-desk pp-list">
+                                                <span class="popular-list__title-text" id="course-title-design">
+                                                    <!-- Dynamic title will be inserted here -->
+                                                </span>
+                                            </p>
+                                            <ul class="free-flow-list">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper" id="course-list-design">
+                                                        <!-- Cards will be dynamically inserted here -->
+                                                    </div>
+                                                    <!-- Swiper navigation buttons -->
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <!-- Swiper pagination -->
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                            <div class="program-list__show-more js-program-show-more track-click-mp"
+                                data-event-type="Show More" data-title="Course Layout">Show more</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <button type="button "
+                class="shimmer-button btn text-white bg-danger h-40 p-3 mt-2 text-uppercase letter-space position-relative left-50"
+                id="progr-course-btn">
+                EXPLORE MORE COURSES
+                <i></i>
+            </button>
+        </div>
+
+
+    </section>
+
+    <!-- ---------------------------------client companies ---------------------------------- -->
+    <div class="carousel-container pt-5 rounded pb-3" style="height: auto;">
+        <!--  slider 1  --->
+        <h3
+            class="elementor-headline elementor-headline-animation-type-typing elementor-headline-letters text-danger pt-3 pb-5">
+            Empowering Students to Secure Placements in Top Companies
+        </h3>
+
+      <div class="d-flex flex-column gap-4">
+        <div class="client-carousel">
+            <div class="carousel__list">
+                <i class="carousel__item fa-brands fa-apple" style="--position: 1"></i>
+                <i class="carousel__item fa-brands fa-windows" style="--position: 2"></i>
+                <i class="carousel__item fa-brands fa-cc-visa" style="--position: 3"></i>
+                <i class="carousel__item fa-brands fa-dribbble" style="--position: 4"></i>
+                <i class="carousel__item fa-brands fa-airbnb" style="--position: 5"></i>
+                <i class="carousel__item fa-brands fa-amazon" style="--position: 6"></i>
+                <i class="carousel__item fa-brands fa-imdb" style="--position: 7"></i>
+                <i class="carousel__item fa-brands fa-linkedin" style="--position: 8"></i>
+                <i class="carousel__item fa-brands fa-facebook" style="--position: 9"></i>
+                <i class="carousel__item fa-brands fa-twitter" style="--position: 10"></i>
+            </div>
+        </div>
+
+        <!-- slider 2 -->
+        <div class="client-carousel" reverse="true">
+            <div class="carousel__list">
+                <i class="carousel__item fa-brands fa-apple" style="--position: 1"></i>
+                <i class="carousel__item fa-brands fa-windows" style="--position: 2"></i>
+                <i class="carousel__item fa-brands fa-cc-visa" style="--position: 3"></i>
+                <i class="carousel__item fa-brands fa-dribbble" style="--position: 4"></i>
+                <i class="carousel__item fa-brands fa-airbnb" style="--position: 5"></i>
+                <i class="carousel__item fa-brands fa-amazon" style="--position: 6"></i>
+                <i class="carousel__item fa-brands fa-imdb" style="--position: 7"></i>
+                <i class="carousel__item fa-brands fa-linkedin" style="--position: 8"></i>
+                <i class="carousel__item fa-brands fa-facebook" style="--position: 9"></i>
+                <i class="carousel__item fa-brands fa-twitter" style="--position: 10"></i>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ------------------------------------build of trust 1 ------------------------->
+    <div class="container-fluid  pb-4 pt-5" id="worried-1">
+        <div class="container inner-cont d-flex flex-column justify-content-center align-items-center pb-3">
+            <h3 class="elementor-headline elementor-headline-animation-type-typing elementor-headline-letters">
+                <span class="text-center elementor-headline-text-wrapper text-danger">
+                    Are You Also Worried About
+                    <span class="linear-wipe">
+                        <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+                            <span class="elementor-headline-dynamic-text" data-text="Layoffs"></span>
+                            <span class="elementor-headline-dynamic-text" data-text="Losing Jobs"></span>
+                            <span class="elementor-headline-dynamic-text" data-text="Getting Replaced by AI"></span>
+                        </span>
+                    </span>
+                    <span
+                        class="elementor-headline-plain-text elementor-headline-text-wrapper element-question text-danger">?</span>
+                </span>
+            </h3>
+        </div>
+        <div class="container report-cont text-center pb-4">
+            <h4 class="text-24">Reports from around the globe have suggested that
+                around<mark>~70%</mark> of jobs <br>in the world will either be eliminated or changed radically because
+                of
+                AI.<i class="fa-solid fa-chevron-right fa-rotate-270 fa-2xl"></i></h4>
+        </div>
+        
+        <div class="gradient-cards justify-content-center mx-auto">
+               
+            <div class="container-card" id="card-wrapper">
+                <article class="card-item" data-bkg="./assests/images/aicard1.jpg" data-primarycolor="#1e375a">
+                <!-- <div class="card-img" style="width: 100%; height: 200px; background-image: url('./assests/images/aibg.jpg'); background-size: cover; background-position: center;"></div>    -->
+                 <div class="card-content">
+                <p class="card-title text-danger text-center"></p>
+                <p class="card-description text-dark px-4 pb-0"></p>
+                </div>
+                </article>
+                <a href="" class="read-more">Read more</a>
+            </div>
+       
+
+            <div class="trend-card text-center text-md-center justify-content-center ">
+            <button id="arrow-top" class="arrow-btn"><i class="fa-solid fa-angle-up fs-5" style="color: #dc3545;"></i></button>
+        
+            <div class="options-list" id="options-list"></div>
+            <button id="arrow-bottom" class="arrow-btn"><i class="fa-solid fa-angle-down fs-5" style="color: #dc3545;"></i></button>
+
+            <div class="indicators mt-3 pb-0 d-none" id="gradient-indicator">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+      
+
+
+
+
+
+
+
+        <!-- ---------------------------------build of trust 1 ends ------------- -->
+        <!-- --------------------------------------------------------build of Trust -------------------------------- -->
+        <div class="container-fluid pt-5 pb-3" id="soaring-2">
+            <div class="container ">
+                <h3 class="text-center text-danger text-12">
+                    Soaring To New Heights, Every Year
+                </h3>
+
+                <div class="row pt-5 align-items-center justify-content-center" >
+                    <!-- Options List -->
+                    <div
+                        class="col-md-12 col-lg-3 col-sm-12 text-center text-md-center justify-content-center align-items-center">
+                        <div class="options-list" id="graph-label">
+                            <div class="option-item" data-type="averageSalary">Average salary hike</div>
+                            <div class="option-item" data-type="highestSalary">Highest salary hike</div>
+                            <div class="option-item" data-type="fresherSalary">Average fresher salary</div>
+                            <div class="option-item active" data-type="opportunities">No. of opportunities</div>
+                        </div>
+                    </div>
+                    <div class="indicators mt-3 pb-3">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                    <!-- <---- Chart Section  -->
+                    <div class="col-md-12 col-lg-8 col-sm-12 ">
+                        <div class="chart-container pt-4  bx-shadow">
+                            <div class="recharts-responsive-container customBarChartHomepage">
+                                <!-- <svg class="recharts-surface" width="100%" height="270"></svg> -->
+                                <svg class="recharts-surface" width="100%" height="270" id="barGraph"></svg>
+                            </div>
+
+
+                            <!--  -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Button Section -->
+            <div class="text-center mt-5">
+                <button type="button"
+                    class="shimmer-button btn text-white bg-danger h-40 mt-2 text-uppercase letter-space" id="strt-lrng">
+                    START LEARNING <i></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="app">
+        <div id="chart">
+            <svg></svg>
+        </div>
+        <div id="data">
+            <ul></ul>
+        </div>
+    </div> -->
+
+    <!-- -------------------------------------------------------------How student journey starts ------------------------------------------------------------------ -->
+
+
+
+    <!-- ----------------------------------------How the student journey ends --------------------------------------------- -->
+    <!-- --------------------------------------------------Placements To Students start  ------------------------------ -->
+
+    <div class="container pt-0 pb-5 " id="std-placement">
+        <h3 class="text-center text-12 text-danger pt-5">How Achieversit has Placed 10k+ Students?</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, error,
+            porro
+            reiciendis
+            expedita culpa, iure blanditiis cum pariatur.</p>
+        <div class="container slide-container pb-5 px-3">
+            <div id="slider-container-one" class="placement-records slider">
+                <div class="slider-content" id="slider-content-one"></div>
+            </div>
+            <div id="slider-container-two" class="placement-records-two slider">
+                <div class="slider-content" id="slider-content-two"></div>
+            </div>
+        </div>
+
+        <div class="placement-card">
+            <div class="products">
+                <!-- Dynamic cards will be appended here -->
+            </div>
+            <div class="footer">
+                <a class="btn" id="prev" href="#" ripple="" ripple-color="#666666">Prev</a>
+                <a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Next</a>
+            </div>
+        </div>
+
+
+        <button type="button "
+        class="shimmer-button btn text-white bg-danger h-40  text-uppercase letter-space position-relative left-50"
+        id="shimmer-btn-experts-2">
+        Get started with us
+        <i></i>
+    </button>
+
+    </div>
+    <!---------------------------------------------Placements TO Students End--------------------  -->
+
+
+
+    <!-- -----------------How Our Course Compares------------------------------ -->
+    <div class="container">
+        <h3 class="text-center text-12 text-danger pb-4">How Our AchieversIT Institute Empowers Your Career Journey</h3>
+
+
+
+
+
+
+
+        <section class="ps-timeline-sec pt-0" id="careerjrny">
+            <div class="container">
+                <ol class="ps-timeline">
+                    <li>
+                        <div class="img-handler-top">
+                            <img src="./assests/images/1.png" alt="" />
+                        </div>
+                        <div class="ps-bot">
+                            <p>Explore our wide range of industry-relevant courses and find the one that matches your
+                                career goals.</p>
+                        </div>
+                        <span class="ps-sp-top">01</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-bot">
+                            <img src="./assests/images/2.png" alt="" />
+                        </div>
+                        <div class="ps-top">
+                            <p>Book a free counseling session with our experts to understand the right learning path for
+                                you.</p>
+                        </div>
+                        <span class="ps-sp-bot">02</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <img src="./assests/images/3.png" alt="" />
+                        </div>
+                        <div class="ps-bot">
+                            <p>Complete the enrollment process by registering for the course of your choice and
+                                reserving your seat.</p>
+                        </div>
+
+                        <span class="ps-sp-top">03</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-bot" id="img-handler-bot-4">
+                            <img src="./assests/images/4.png" alt="" />
+                        </div>
+                        <div class="ps-top">
+                            <p>Begin your journey with hands-on training, real-time projects, and expert mentorship.</p>
+                        </div>
+                        <span class="ps-sp-bot">04</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <img src="./assests/images/5.png" alt="" />
+                        </div>
+                        <div class="ps-bot">
+                            <p>Access resume building, interview preparation, and placement support services.</p>
+                        </div>
+                        <span class="ps-sp-top">05</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-bot">
+                            <img src="./assests/images/6.png" alt="" />
+                        </div>
+                        <div class="ps-top">
+                            <p>Join the growing community of successful AchieversIT alumni placed in top companies.</p>
+                        </div>
+                        <span class="ps-sp-bot">06</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <div class="timeline" id="timeline2">
+            <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                <div class="timeline__event__icon ">
+                    <!-- <img src="./assests/images/1.png" alt="" style="width: 150px;height: 130px;"> -->
+                    <i class="fa-solid fa-brain"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    Explore <br /> Courses
+                </div>
+                <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Begin by researching available courses and programs that align with your career goals, such
+                            as web development, data science, or cloud computing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                <div class="timeline__event__icon">
+                    <!-- <img src="./assests/images/2.png" alt="" style="width: 150px;height: 200px;"> -->
+                    <i class="fa-regular fa-lightbulb"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    Consult<br /> Advisors
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Get guidance from career counselors or instructors to find the best course based on your
+                            interests, background, and market demand.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                <div class="timeline__event__icon">
+                    <i class="fa-solid fa-rocket"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    Enroll in<br /> the Course
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Complete the enrollment process, select your batch timings, and pay the course fee to secure
+                            your spot in the training program.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp timeline__event--type1">
+                <div class="timeline__event__icon">
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    Begin Training
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Dive into learning with interactive sessions, coding exercises, and assignments led by expert
+                            trainers.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="#enrollNow" <button type="button"
+            class="shimmer-button btn text-white bg-danger h-40 mt-2 text-uppercase letter-space position-relative left-50"
+            id="shimmer-btn-experts">
+            Enroll Now
+            <i></i>
+            </button></a>
+    </div>
+    <!-- -------------------------How Our Course Compare Ends ------------>
+
+    <!-- --------------------Learn Software Courses From The Expert Trainers -------------- -->
+    <section class="section-padding  mt-5 pt-0" style="background-color:#ffff;">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center">
+                        <div class="blog-listing-title mb-5 " data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="text-12 text-center text-danger">Learn Software Courses from the
+                                Expert
+                                Trainers
+                            </h3>
+                            <div class="text-block-5">Explore new and trending free online courses.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center align-items-center mx-auto ">
+                        <div class="grid-wrapper mb-5">
+
+                            <div class="box2 rounded text-center align-middle  position-relative " data-aos="flip-left"
+                                data-aos-delay="100">
+                                <div class="abs-label d-flex align-items-center justify-content-center bx-shadow" id="abs-label1">
+                                    Online
+                                    Classes
+                                </div>
+                                <img src="./assests/images/smiling-woman-working-laptop.jpg" alt="">
+                            </div>
+                            <div class="box2 rounded text-center align-middle  position-relative " data-aos="flip-left"
+                                data-aos-delay="100">
+                                <img src="./assests/images/young-indian-man-with-laptop-gray-wall.jpg" alt="">
+                            </div>
+
+                            <div class="tall rounded text-center align-middle   gradient-item bx-shadow" data-aos="flip-left"
+                                data-aos-delay="100">
+                                <div class="text-left link-gradient p-2">
+                                    <br>
+                                    <h1 class="d-block  textitem-gradient">Smart Learning in the Digital Era
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="box1 position-relative  " data-aos="flip-right" data-aos-delay="100">
+                                <div class="abs-label d-flex align-items-center justify-content-center bx-shadow"
+                                    style="left: -20%;width: 30%;">Offline Classes</div>
+                                <img src="./assests/images/group-four-south-asian-men-s-posed-business-meeting-cafe-indians-work-with-laptops-together-using-various-gadgets-having-conversation-indian-man-with-mobile-phone.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button "
+            class="shimmer-button btn text-white bg-danger h-40  text-uppercase letter-space position-relative left-50"
+            id="shimmer-btn-experts-2">
+            Join our experts to learn.
+            <i></i>
+        </button>
+    </section>
+    <!-- --------------------Learn Software Courses From The Expert Trainers Ends -------------- -->
+
+
+
+    <!-- -----------------------How our course compares ------------------------------- -->
+
+    <section id="drive-growth" class="py-auto mt-5">
+        <div class="container">
+            <div class="d-flex flex-column  align-items-center w-100">
+                <div class="text-center mb-3 max-w-33">
+                    <h3 class="stat-heading text-danger">Join Our Thriving Global Learning Community</h3>
+
+                </div>
+
+                <div class="row justify-content-center mb-4 w-100">
+                    <!-- Statistic 1 -->
+                    <div class="col-md-4 text-center  d-flex flex-column justify-content-center align-items-center">
+
+                        <div class="icon-circle bg-red py-2">
+                            <i class="fas fa-award fa-2x"></i>
+                        </div>
+
+                        <h4 class="stat-icon-heading mt-2 bg-gradient-red stat-value" data-target="450000">0
+                        </h4>
+                        <p class="text-tag">Professionals Trained</p>
+
+                    </div>
+
+                    <!-- Statistic 2 -->
+                    <div class="col-md-4 text-center  d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-circle bg-green py-2">
+                            <i class="fas fa-globe fa-2x"></i>
+                        </div>
+                        <h4 class="stat-icon-heading mt-2 bg-gradient-green stat-value" data-target="45000"">0</h4>
+                            <p class=" text-tag">Enterprise Clients</p>
+                    </div>
+
+                    <!-- Statistic 3 -->
+                    <div class="col-md-4 text-center  d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-circle bg-purple py-2">
+                            <i class="fa-regular fa-gem fa-2x"></i>
+                        </div>
+                        <h4 class="stat-icon-heading mt-2 bg-gradient-purple stat-value" data-target="100">0
+                        </h4>
+                        <p class="text-tag">Countries and Counting</p>
+                    </div>
+                </div>
+
+                <div class="map-container container position-relative p-0">
+                    <img src="./assests/images/worldmapbase.svg" alt="Global map" class="w-100 h-100 object-fit-cover">
+
+                    <div id="locations"></div>
+
+                </div>
+            </div>
+        </div>
+        <button type="button "
+            class="shimmer-button btn text-white bg-danger h-40  text-uppercase letter-space position-relative left-50"
+            id="btn-kickstart">
+            Kickstart your journey
+            <i></i>
+        </button>
+    </section>
+    <!-- -----------------------How our course compares ends ------------------------------- -->
+
+
+
+
+    <!-- -------------------------------------Testimonials /reviews----------------------- -->
+    <div class="container mt-0 rounded-top-border">
+        <p class="pt-5 text-uppercase text-center">Learner Reviews From the World Over</p>
+        <h3 class="text-center">Testimonials That Speak Volumes</h3>
+        <div class="d-flex justify-content-center gap-3 my-4">
+            <button class="btn btn-review bg-white btn-active" id="allReviews">All Reviews</button>
+            <button class="btn btn-google bg-white" id="googleReviews">Google Reviews</button>
+            <button class="btn btn-linkedin bg-white" id="linkedinReviews">YouTube Reviews</button>
+        </div>
+        <div class="accordion d-flex justify-content-center align-items-center height" id="accordionExample">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="p-3 pb-0">
+                        <ul class="testimonial-list list-unstyled" id="testimonialList"></ul>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-4">
+                    <div class="p-3 testimonials-margin" id="reviewContainer"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----------------------------Testimonial/Reviews end---------------------------- -->
+    <!-- ----------------------------------------------Blogs start here ----------------------------------------- -->
+    <div class="blog-section pb-5 ">
+        <div class="container mt-3 pt-2">
+            <h3 class="text-center text-41 text-danger linear-wipe pt-0 pb-4">Blogs
+
+            </h3>
+
+        </div>
+        <div class="container d-flex justify-content-center pb-4 flex-wrap">
+            <div id="blog-container" class=" d-flex justify-content-center gap-4 flex-wrap">
+
+            </div>
+        </div>
+        <a href="#enrollNow" <button type="button "
+            class="shimmer-button btn text-white bg-danger h-40  text-uppercase letter-space position-relative left-50" 
+
+            id="shimmer-btn-experts">
+            Explore Now
+            <i></i>
+            </button></a>
+       
+    </div>
+    <!-- -----------------------------------------------Blogs ends here ---------------------------------------------- -->
+    <!-- -----------------------------------------------FAQs to ask section starts here -------------------- ------------------------- -->
+    <div class="skew-c"></div>
+    <div class="container mt-0 border-0" id="faq-section">
+        <h3 class="text-center text-12 text-danger">Frequently Asked Questions about AchieversIT</h3>
+        <div class="accordion border-0 pt-3 pb-5 rounded" id="faqAccordion">
+            <div class="accordion-item border-0 mb-2 ">
+                <h2 class="accordion-header" id="faqOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
+                        What courses are offered at AchieversIT?
+                    </button>
+                </h2>
+                <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AchieversIT offers a variety of software training courses, including Web Development, Data
+                        Science, Machine Learning, and Artificial-Intelligence.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="faqTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFaqTwo" aria-expanded="false" aria-controls="collapseFaqTwo">
+                        How long do the courses last?
+                    </button>
+                </h2>
+                <div id="collapseFaqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Course durations vary; typically, our programs last from 3 to 6 months, depending on the course
+                        and format (full-time or part-time).
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="faqThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFaqThree" aria-expanded="false" aria-controls="collapseFaqThree">
+                        Are there any prerequisites for joining the courses?
+                    </button>
+                </h2>
+                <div id="collapseFaqThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        While some courses may require prior knowledge of programming or software concepts, many are
+                        designed for beginners and have no prerequisites.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="faqFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFaqFour" aria-expanded="false" aria-controls="collapseFaqFour">
+                        Is there any placement assistance provided?
+                    </button>
+                </h2>
+                <div id="collapseFaqFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, AchieversIT provides placement assistance to all students, helping them connect with
+                        potential employers through job fairs and industry networking events.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="faqFive">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFaqFive" aria-expanded="false" aria-controls="collapseFaqFive">
+                        What are the payment options for courses?
+                    </button>
+                </h2>
+                <div id="collapseFaqFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We offer various payment options, including upfront payments, installment plans, and financing
+                        through third-party providers. Please contact our admissions team for more details.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="faqSix">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFaqSix" aria-expanded="false" aria-controls="collapseFaqSix">
+                        Can I attend classes online?
+                    </button>
+                </h2>
+                <div id="collapseFaqSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we offer both in-person and online classes, allowing you to choose the format that best
+                        fits your schedule and learning preferences.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------fAQ section ends here ---------------------------------------------- -->
+
+
+
+
+
+    <div class="md:rounded-t-[64px] ">
+        <div class="d-flex flex-column  align-items-center justify-content-center py-5 pt-2 pb-3 px-4 gap-3 border-bottom-2 border-opacity-20 border-b-4"
+            id="footer-sec">
+            <h2 class="font-extrabold text-center text-gray-900">
+                <span class="block text-dark text-[20px] md:text-[24px] font-semibold font-sans">
+                    Building your tech skills has never been easier.
+                </span>
+            </h2>
+            <div class="d-flex">
+                <button type="button "
+                    class="shimmer-button btn text-white bg-danger h-40  text-uppercase letter-space position-relative "
+                    id="start-learningbtn">
+                    START LEARNING
+                    <i></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ---------------------------------------------footer starts here --------------------------- -->
+
+    <footer class="mt-3 text-center text-lg-start text-dark bx-shadow" id="footbg" style="
+background-color:#c5e1f69b
+">
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="pt-3">
+            <!-- <div class="md:rounded-t-[64px] ">
+                <div class="d-flex flex-row  align-items-center justify-content-center py-5 pb-0 px-4 gap-3 border-bottom-2 border-opacity-20 border-b-4"
+                    id="footer-sec">
+                    <h2 class="font-extrabold text-center text-gray-900">
+                        <span class="block text-dark text-[20px] md:text-[24px] font-semibold font-sans">
+                            Building your tech skills has never been easier.
+                        </span>
+                    </h2>
+                    <div class="d-flex flex-row">
+                        <button type="button "
+                            class="shimmer-button btn text-white bg-danger h-40  text-uppercase letter-space position-relative "
+                            id="start-learningbtn">
+                            START LEARNING
+                            <i></i>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Logo and Social Media Section -->
+            <div class="container">
+                <div class="w-100 d-flex justify-content-between align-items-center pt-0 pb-0 px-2 footer-social-media"
+                    style="box-shadow: rgba(243, 242, 242, 0.2) 0px 1px 0px 0px;">
+                    <a href="/">
+                        <img src="./assests/images/logo-ait-white.png" alt="logo" class="w-100 ait-logo ">
+                    </a>
+                    <div class="d-flex align-items-center footer-icons">
+                        <p class="text-neutral-ms-grey-400 mb-0">Follow us -</p>
+                        <div class="d-flex align-items-center ml-3 "> <!-- Adjusted margin for spacing -->
+
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Company
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Careers</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Blogs</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Explore
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Corporate Training</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Hire From Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Existing Students</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Resources</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Support
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">FAQ's</a>
+                        </p>
+                        <p>
+
+                            <a href="#!" class="text-reset">Terms and Conditions</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy Policy and Disclaimer</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Cancellation and Refund Policy</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <div
+                            class="mx-auto d-flex flex-column gap-0 align-items-center justify-content-end w-100 footer-disc">
+                            <h6 class="text-center fw-bold">Learn
+                                on the go! <br class="hidden md:block"> community of learners</h6>
+                            <a rel="noreferrer" class="text-dark text-center fw-bold cursor-pointer bx-shadow rounded-8"
+                                target="_blank" title="Get the Android App" style=" box-shadow: 0 4px 10px rgba(68, 0, 255, 0.283);border-bottom-left-radius: 0 !important;border-bottom-right-radius: 0 !important;"> Refer and Earn</a>
+                            <a rel="noreferrer"
+                                href="https://play.google.com/store/apps/details?id=com.mobile.simplilearn"
+                                target="_blank"
+                                class="d-flex gap-3 align-items-center text-nowrap fw-bold text-dark cursor-pointer bx-shadow rounded-8"
+                                title="Get the Android App"style=" box-shadow: 0 4px 10px rgba(68, 0, 255, 0.283);border-top-left-radius: 0 !important;border-top-right-radius: 0 !important;"><i class="fa-brands fa-android fs-3"
+                                    style="color: orangered;"></i>Get the Android App</a>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- --------------Links --------------------------------------------------- -->
+        <div class="container">
+            <div class="brand-courses pt-0">
+                <div class="pb-3">
+                    <p>Trending Post Graduate Programs</p>
+                    <a href="#" title="Artificial Intelligence Course">Artificial Intelligence Course</a> |
+                    <a href="#" title="Cloud Computing Certification Course">Cloud Computing Certification
+                        Course</a> | <a href="#" title="Full Stack Web Development Course">Full Stack Web
+                        Development Course</a> | <a href="#" title="PG in Data Science">PG in Data
+                        Science</a> |
+                    <a href="#" title="Product Management Certification Course">Product Management
+                        Certification
+                        Course</a> | <a href="#" title="Blockchain Course">Blockchain Course</a> | <a href="#"
+                        title="Machine Learning Course">Machine Learning Course</a> | <a href="#"
+                        title="Cyber Security Course in India">Cyber Security Course in India</a> | <a href="#"
+                        title="Project Management Certification Course">Project Management
+                        Certification
+                        Course</a>
+                    | <a href="#" title="Lean Six Sigma Certification Course">Lean Six Sigma Certification
+                        Course</a> |
+                    <a href="#" title="Cloud Computing and DevOps - IITG">Cloud Computing and DevOps -
+                        IITG</a>
+                    | <a href="#" title="Data Analytics Program">Data Analytics Program</a> | <a href="#"
+                        title="AI and ML Course">AI and ML Course</a> | <a href="#"
+                        title="Business Analysis Certification Course">Business Analysis Certification
+                        Course</a> |
+                    <a href="#" title="Data Engineering Certification Courses">Data Engineering
+                        Certification
+                        Courses</a>
+                </div>
+                <div class="pb-3">
+                    <p>Trending Master Programs</p>
+                    <a href="#" title="PMP Plus Certification Training Course">PMP Plus
+                        Certification Training Course</a> | <a href="#" title="Data Science Certifiation Course">Data
+                        Science Certifiation Course</a> | <a href="#" title="Data Analyst Course">Data
+                        Analyst Course</a> | <a href="#" title="Masters in Artificial Intelligence">Masters
+                        in
+                        Artificial Intelligence</a> | <a href="#"
+                        title="Cloud Architect Certification Training Course">Cloud Architect Certification
+                        Training
+                        Course</a> | <a href="#" title="DevOps Engineer Certification Training Course">DevOps
+                        Engineer
+                        Certification Training
+                        Course</a> | <a href="#" title="Digital Marketing Course">Digital
+                        Marketing Course</a> | <a href="#" title="Cyber Security Expert Course">Cyber
+                        Security
+                        Expert
+                        Course</a> | <a href="#" title="Business Analyst Course">Business
+                        Analyst Course</a>
+                </div>
+                <div class="pb-3">
+                    <p>Trending Courses</p><a href="#" title="PMP Certification Training Course">PMP
+                        Certification
+                        Training Course</a> | <a href="#" title="CSM Certification Course">CSM
+                        Certification Course</a> | <a href="#" title="Data Science with Python Course">Data
+                        Science
+                        with
+                        Python Course</a> | <a href="#" title="AWS Certification">AWS
+                        Certification</a> | <a href="#" title="AWS Technical Essentials">AWS
+                        Technical Essentials</a> | <a href="3" title="AWS DevOps Certification">AWS
+                        DevOps Certification</a> | <a href="#" title="ITIL Certification">ITIL
+                        Certification</a>
+                    |
+                    <a href="#" title="Architecting on AWS Certification">Architecting on AWS
+                        Certification</a>
+                    | <a href="3" title="AZ 900 Certification">AWS
+                        Certification</a> | <a href="#" title="SAFe Certification">SAFe Certification</a> |
+                    <a href="#" title="CISSP Certification Training">CISSP
+                        Certification Training</a> | <a href="tableau-training-and-data-visualization-course"
+                        title="Tableau Certification Course">Tableau Certification Course</a>
+                </div>
+                <div class="pb-3">
+                    <p>Trending Categories</p><a href="#" title="Project Management Courses">Project
+                        Management Courses</a> | <a href="#" title="AWS Courses">AWS
+                        Courses</a> |
+                    <a href="c#" title="Web Development Courses">Web Development
+                        Courses</a> | <a href="#" title="Online Certifications">Online
+                        Certifications</a> | <a href="#" title="Generative AI Courses">Generative AI
+                        Courses</a>
+                    |
+                    <a href="#" title="Agile Certifications">Agile
+                        Certifications</a> | <a href="#" title="Cloud Computing Courses">Cloud Computing
+                        Courses</a> | <a href="#" title="Cyber Security Courses">Cyber Security
+                        Courses</a> | <a href="#" title="EC-Council Certifications">EC-Council
+                        Certifications</a> |
+                    <a href="#" title="PeopleCert Certifications">PeopleCert
+                        Certifications</a> | <a href="#" title="Scrum Alliance Certifications">Scrum
+                        Alliance
+                        Certifications</a> | <a href="#" title="Scaled Agile Certifications">Scaled
+                        Agile Certifications</a> | <a href="#" title="Google Cloud Courses">Google Cloud
+                        Courses</a>
+                </div>
+                <div class="pb-3">
+                    <p>Trending Resources</p><a href="#" title="Python Tutorial">Python
+                        Tutorial</a> | <a href="#" title="JavaScript Tutorial">JavaScript
+                        Tutorial</a> | <a href="#" title="Java Tutorial">Java Tutorial</a> |
+                    <a href="#" title="Angular Tutorial">Angular
+                        Tutorial</a> | <a href="#" title="Node.js Tutorial">Node.js Tutorial</a>
+                    | <a href="#" title="Docker Tutorial">Docker
+                        Tutorial</a> | <a href="#" title="Git Tutorial">Git
+                        Tutorial</a> | <a href="#" title="Kubernetes Tutorial">Kubernetes
+                        Tutorial</a> | <a href="#" title="Power BI Tutorial">Power BI
+                        Tutorial</a> | <a href="#" title="CSS Tutorial">CSS
+                        Tutorial</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------footer end -------------------------- -->
+        <div class="footer-end">
+            <div class="simpli_certification container">
+                <h4 class="text-center fs-5" style="font-weight: 400;">Disclaimer</h4>
+                <p class="text-center">
+                    By visiting the website Achieversit, viewing, accessing, or otherwise using any of the
+                    information
+                    collected, created, or compiled by Achieversit, you agree to be bound to the terms and
+                    conditions of
+                    the
+                    company. By acknowledging these terms you are legally bound to Achieversit and the use
+                    of
+                    the
+                    website
+                    shall
+                    indicate your conclusive acceptance of this agreement.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- -----------------------Links End----------------------------------------- -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="#">Achieversit</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+   
+    <div class="social">
+
+        <ul>
+            <li><a href="https://twitter.com/">Twitter <i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://github.com/">Whatsapp <i class="fa-brands fa-whatsapp" style="color: green;"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com">Linkedin <i class="fa-brands fa-linkedin-in"
+                        style="color: blue;"></i></a></li>
+        </ul>
+    </div>
+    <button class="my-button" id="myButton">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- -----------------------------------------------------------footerends ---------------------- -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script src="./assests/js/navbar.js"></script>
+    <script src="./assests/js/banner.js"></script>
+    <script src="./assests/js/courses.js"></script>
+    <script src="./assests/js/studentplacements.js"></script>
+    <script src="./assests/js/globalspread.js"></script>
+    <script src="./assests/js/buildtrust1.js"></script>
+    <script src="./assests/js/reviews.js"></script>
+    <script src="./assests/js/graph-data.js"></script>
+    <script src="./assests/js/blogs.js"></script>
+    <script src="./assests/js/timeline.js"></script>
+    <script src="./assests/js/responsive_bar.js"></script>
+    <script src="./assests/js/respstudentjrny.js"></script>
+    <script src="./assests/js/top-btn.js"></script>
+    <script src="./assests/js/jobopportnities.js"></script>
+
+</body>
+
+</html>
