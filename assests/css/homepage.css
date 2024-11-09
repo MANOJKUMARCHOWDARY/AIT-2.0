@@ -3172,12 +3172,11 @@ footer .footer-disc a {
 }
 
 
-
 /* Media Query for Tablets (Min-width: 768px) */
-@media (min-width:576px) and (max-width: 1200px) {
+@media (min-width:576px) and (max-width: 768px) {
     .my-button {
-        height: 14vw;
-        width: 14vw;
+        height: 10vw;
+        width: 10vw;
     }
 
     .my-button i {
@@ -3193,7 +3192,7 @@ footer .footer-disc a {
     }
 
     .my-button i {
-        font-size: 120%; /* Adjust icon size for even smaller buttons */
+        font-size: 100%; /* Adjust icon size for even smaller buttons */
     }
 }
 
