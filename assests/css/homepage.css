@@ -3174,8 +3174,8 @@ footer .footer-disc a {
 /* Media Query for Tablets (Min-width: 768px) */
 @media (max-width: 768px) {
     .my-button {
-        height: 4vw;
-        width: 4vw;
+        height: 8vw;
+        width: 8vw;
     }
 
     .my-button i {
@@ -3186,8 +3186,8 @@ footer .footer-disc a {
 /* Media Query for Phones (Min-width: 576px) */
 @media (max-width: 576px) {
     .my-button {
-        height: 12vw;
-        width: 12vw;
+        height: 14vw;
+        width: 14vw;
     }
 
     .my-button i {
